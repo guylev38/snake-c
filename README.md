@@ -6,8 +6,8 @@ Made with ncurses library.
 
 ## Usage
 Build it:
-  `make`
+`make`
 
 Run the binary:
-  `./snake`
+`./snake`
 
