@@ -46,6 +46,8 @@ int main(void){
   initscr();
   cbreak();
   noecho();
+  timeout(0);
+  nodelay(stdscr, TRUE);
   curs_set(0);
 
   srand(time(NULL));
@@ -59,24 +61,12 @@ int main(void){
   start_color();
   init_colors();
 
-  printw("Press any key to start...");
-
   // Game Loop
   int ch;
   long start_time;
-
   while((ch = getch()) != 'q'){
     start_time = get_current_time_ms();
 
-    cbreak();
-    noecho();
-    curs_set(0);
-    timeout(0);
-    nodelay(stdscr, TRUE);
-
-    // Game Logic and Rendering
-    clear();
-    printw("Score %d\n", score);
 
     // Check if snake hit wall
     if(check_hit_wall(snake) == TRUE){
@@ -113,7 +103,8 @@ int main(void){
     refresh();
     handle_fps(start_time);
   }
-
+  usleep(500000);
+  clear();
   printw("Quitting Snake...\n");      
   printw("Score: %d", score);
   refresh();
