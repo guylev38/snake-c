@@ -1,4 +1,4 @@
-# snake-c
+# snake-c 🐍
 Simple terminal Snake game in C
 
-❗Refactoring in progress... 
+<img src="snake-demo.gif"></img>
