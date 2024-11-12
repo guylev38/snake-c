@@ -1,6 +1,5 @@
-# snake-c 🐍
-Simple terminal Snake game in C.
-Made with ncurses library.
+# Snake 🐍
+Simple terminal Snake game in C with the ncurses library.
 
 <img src="snake-demo.gif"></img>
 
