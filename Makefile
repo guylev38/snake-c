@@ -8,7 +8,7 @@ SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 
 # Output Executable
-EXEC = game
+EXEC = snake
 
 # Default target: build the executable
 all: $(EXEC)
