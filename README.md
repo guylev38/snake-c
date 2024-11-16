@@ -10,3 +10,9 @@ Build it:
 Run the binary:
 `./snake`
 
+## Controls
+W - UP  
+S - DOWN  
+A - LEFT  
+D - RIGHT  
+Q - QUIT  
